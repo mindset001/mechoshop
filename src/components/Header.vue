@@ -6,11 +6,10 @@
         </div>
             <div>
                 <ul>
-                <li>Home</li>    
-                <li>About</li> 
-                <li>Services</li>
-                <li>Shop</li>     
-                <li>Gallery</li>  
+                <li><router-link to="/" class="nav-item nav-link">Home</router-link></li>    
+                <li><router-link to="/about" class="nav-item nav-link">About</router-link></li> 
+                <li><router-link to="/services" class="nav-link">Services</router-link></li>
+                
                 <li class="btn">
                     Login
                 </li>

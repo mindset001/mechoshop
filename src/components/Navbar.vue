@@ -1,9 +1,9 @@
 
 <template>
   <div id="nav">
-  <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light mine">
     <a class="navbar-brand" href="#">
-        <img src="../assets/pp.jpeg" alt="" style="height:30px; width:30px;">
+        <img src="../assets/long2.png" alt="" style="height:60px; width:80px;">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,27 +20,31 @@
         
     </div>
 </nav>
+ <router-view/>
  </div>
-  <router-view/>
+ 
 </template>
 
 
 
 <style scoped>
     
-    nav{
-    
+   
+    .mine{
     display: flex;
     justify-content: space-between;
+    background: transparent;
+    color: aliceblue;
+
     }
     #nav a {
     font-weight: bold;
-    color: black;
+    color: blueviolet;
     }
 
     #nav a.router-link-exact-active {
     color: black;
-    background: crimson;
+    background: yellowgreen;
     border-radius: .5rem;
 }
 </style>

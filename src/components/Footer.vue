@@ -118,6 +118,18 @@ export default {
     .mobile{
         width:50px;
     }
+    .nav{
+        display: none;
+    }
+    .footer{
+        background: #0a1133;
+        height: 80px;
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-top: 20px;
+    }
    
 }
 </style>
