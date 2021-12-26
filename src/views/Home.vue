@@ -3,6 +3,7 @@
   <Header />
     <Hero />
     <Services/>
+    <PageLoader/>
      <Working/>
     <Testimony/>
     <Contact/>
@@ -14,6 +15,7 @@
 <script>
 // @ is an alias to /src
 import Header from '@/components/Header.vue';
+import PageLoader from '@/components/PageLoader.vue';
 import Hero from '@/components/Hero.vue';
 import Services from '@/components/Services.vue';
 import Working from '@/components/Working.vue';
@@ -26,6 +28,7 @@ export default {
   name: 'Home',
   components: {
     Header,
+    PageLoader,
     Hero,
     Services,
     Working,

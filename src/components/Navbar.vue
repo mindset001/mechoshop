@@ -1,4 +1,3 @@
-
 <template>
   <div id="nav">
   <nav class="navbar navbar-expand-lg navbar-light mine">
