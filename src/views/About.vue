@@ -36,7 +36,7 @@
             </div>
           </div>
 
-          <!-- <div class="fourth">
+          <div class="fourth">
           <img src="../assets/experience.png" alt="">
           <div class="text">
             <h1>25 Years of Experience</h1>
@@ -46,9 +46,75 @@
           </div>
 
           
-          </div> -->
+          </div>
+          <div class="fifth">
+          <h4 style="color:#dfb871;">Our Awesome Features</h4>    
+        <h2 style="color:#000;">  WHY CHOOSE US</h2>
+        <div class="cover">
+
+          <div class="one">
+            <div>
+            <h1>ALWAYS AVAILABLE</h1>
+              <p>all mechanicion sites open for visitors, with 24/7 video surveillance being conducted at all objects</p>
+            </div>
+            <div>
+            <h1>FAIR PRICES</h1>
+              <p>you can be 100% sure that it will be delivered right on time, within the set budget limits</p>
+            </div>
+          </div>
+          <div class="two">
+              <img src="../assets/choose.jpg" alt="">
+          </div>
+          <div class="three">
+            <div>
+            <h1>EXPERIENCE MECHANICS</h1>
+              <p>We have a team of specialists capable of maximizing the result and delivering the projects</p>
+            </div>
+            <div>
+            <h1>BEST OFFERS</h1>
+              <p>All aspects of the operations being transparent and clear for clients and partners</p>
+            </div>
+          </div>
+        
+        </div>
+          
+          </div>
+          
+          <div class="sixth">
+              <h4 style="color:#dfb871;">Our Creative Teams</h4>    
+              <h2 style="color:#000;">    TEAM MEMBERS</h2>
+              <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+              <div class="inner">
+              <div>
+                <img src="../assets/slide2-img.png" alt="">
+                <h4>DOUGLAS GILBERT</h4>
+                <h6>Supervisor</h6>
+              </div>
+              <div>
+                <img src="../assets/slide2-img.png" alt="">
+                <h4>DOUGLAS GILBERT</h4>
+                <h6>Supervisor</h6>
+              </div>
+              <div>
+                <img src="../assets/slide2-img.png" alt="">
+                <h4>DOUGLAS GILBERT</h4>
+                <h6>Supervisor</h6>
+              </div>
+              <div>
+                <img src="../assets/slide2-img.png" alt="">
+                <h4>DOUGLAS GILBERT</h4>
+                <h6>Supervisor</h6>
+              </div>
+              
+              </div>
+
+          </div>
   </div>
-  <Working/>
+  
    <Product/>
     <Footer/>
 
@@ -60,14 +126,14 @@
 import Navbar from '@/components/Navbar.vue'
 import Product from '@/components/Product.vue';
 import Footer from '@/components/Footer.vue'
-import Working from '@/components/Working.vue'
+
 
 export default {
     components:{
         Navbar,
         Product,
         Footer,
-        Working
+       
     }
     
 }
@@ -107,6 +173,75 @@ export default {
     color: #fff;
     padding-top: 80px;
   }
+  .cover{
+    display: flex;
+    padding-left: 20em;
+    padding-right: 20em;  
+    padding-top: 60px;
+    align-items:left;
+  }
+  .one{
+    padding-top: 3em;
+    text-align: right; 
+    padding-right: 3em; 
+  }
+  .three{
+    padding-top: 3em;
+    padding-left: 3em;
+  }
+  .one h1{
+    justify-content: left;
+    font-size: 24px;
+  }
+.three h1{
+    text-align: left;
+    justify-content: left;
+    font-size: 24px;
+  }
 
+  .fifth{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sixth{
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20em;
+    padding-right: 20em;
+    padding-top: 5em;
+    padding-block-end: 5em;
+  }
+  .sixth p{
+    text-align: center;
+    width: 60em;
+  }
+  .inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+  }
+  .inner img{
+    width: 15em;
+    height:20em;
+    margin-right: 50px;
+    border-bottom: solid 1px #dfb871;
+  }
+  .inner h4{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 50px;
+  }
+  .inner h6{
+    text-align: center;
+    margin-right: 50px;
+    font-size: 10px;
+  }
 </style>
 
