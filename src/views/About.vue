@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="all">
    
   <div>
   <Navbar/>
@@ -115,7 +115,7 @@
           </div>
   </div>
   
-   <Product/>
+   <!-- <Product/> -->
     <Footer/>
 
   </div>
@@ -124,14 +124,14 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import Product from '@/components/Product.vue';
+// import Product from '@/components/Product.vue';
 import Footer from '@/components/Footer.vue'
 
 
 export default {
     components:{
         Navbar,
-        Product,
+        // Product,
         Footer,
        
     }
@@ -168,7 +168,13 @@ export default {
     padding-right: 20em;
     background: #dfb871;
   }
-
+  .mission{
+    text-align: center;
+  }
+  .vision{
+  padding-top: 40px;
+    text-align: center;
+  }
   .text{
     color: #fff;
     padding-top: 80px;
@@ -212,8 +218,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 20em;
-    padding-right: 20em;
+    
     padding-top: 5em;
     padding-block-end: 5em;
   }
@@ -243,5 +248,106 @@ export default {
     margin-right: 50px;
     font-size: 10px;
   }
+
+
+  @media screen and (max-width: 480px) {
+
+  .all{
+    overflow: hidden;
+  }
+     .second{
+      width: 400px;
+      padding-left: 20px;
+      padding-right: 10px;
+      text-align: center;
+     }
+
+     .left{
+      display: none;
+     }
+
+     .third{
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      width: 400px;
+     }
+     .mission{
+      width: 400px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+     }
+      .vision{
+      padding-top: 40px;
+      width: 400px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+     }
+
+     .fourth{
+       display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+     }
+     .fourth img{
+        width: 400px;   
+       }
+
+       .text{
+          width: 400px;
+          text-align: center;
+       }
+       .cover{
+        display: flex;
+        padding-left: 2em;
+        padding-right: 2em;  
+        padding-top: 60px;
+        align-items:left;
+        justify-content: center;
+  }
+       .two{
+        display: none;
+       }
+       .one h1{
+    justify-content: left;
+    font-size: 16px;
+  }
+.three h1{
+    text-align: left;
+    justify-content: left;
+    font-size: 16px;
+  }
+   .one{
+    padding-top: 3em;
+    text-align: right; 
+    padding-right: 1em; 
+  }
+  .three{
+    padding-top: 3em;
+    padding-left: 1em;
+  }
+
+  .inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sixth{
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    padding-block-end: 5em;
+  }
+  .sixth p{
+    text-align: center;
+    width: 20em;
+  }
+   
+}
 </style>
 
